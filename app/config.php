@@ -15,4 +15,10 @@ return [
     'log'          => [
         'type' => 'trace', // 支持 socket trace file
     ],
+    //分页配置
+    'paginate'               => [
+        'type'      => 'bootstrap',
+        'var_page'  => 'page',
+        'list_rows' => 15,
+    ],
 ];
