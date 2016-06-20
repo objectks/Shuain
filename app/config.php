@@ -21,4 +21,11 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+    'cache'                  => [
+        'type'   => 'Redis',  // 驱动方式
+       // 'path'   => CACHE_PATH,  // 缓存保存目录
+        'prefix' => '',  // 缓存前缀
+        'expire' => 0,  // 缓存有效期 0表示永久缓存
+    ],
+    
 ];
