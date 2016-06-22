@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>随心所欲，随遇而安</title>
+
+<link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+<body>
+
+
+<div class="wrapper">
+
+	<div class="container">
+		<h1>Welcome</h1>
+		<form class="form">
+			<input type="text" placeholder="Username">
+			<input type="password" placeholder="Password">
+			<button type="submit" id="login-button">Login</button>
+		</form>
+	</div>
+	<ul class="bg-bubbles">
+		<li>随</li>
+		<li>心</li>
+		<li>所</li>
+		<li>欲</li>
+		<li>随</li>
+		<li>遇</li>
+		<li>而</li>
+		<li>安</li>
+		<li>帅</li>
+		<li>英</li>
+	</ul>
+	
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+$('#login-button').click(function(event){
+	event.preventDefault();
+	$('form').fadeOut(500);
+	$('.wrapper').addClass('form-success');
+});
+</script>
+
+</body>
+</html>
